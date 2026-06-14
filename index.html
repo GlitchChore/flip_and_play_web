@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <!--
@@ -31,6 +31,13 @@
 
   <title>flip_and_play</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- pdfx: required for PDF rendering on web -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  </script>
 </head>
 <body>
   <!--
@@ -44,3 +51,4 @@
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
+
